@@ -1,7 +1,7 @@
 ##
 # Exemplify rake tasks
 #
-# Will help to create configurations files from their .example templates 
+# Will help to create configuration files from their .example templates 
 # See https://github.com/Velid/exemplify for Readme and examples
 #
 namespace :exemplify do
