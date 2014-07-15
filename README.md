@@ -21,4 +21,11 @@ development:
 4. Remove original files from the source control: `git rm --cached config/database.yml` - this will make sure the file is not present in repository, still keeping it locally. Do not forget to [clear any sensitive information from git history](https://help.github.com/articles/remove-sensitive-data)
 4. Run `rake exemplify:FILENAME` to copy template contents into the file, like this: `rake exemplify:config/database.yml`
 
-**ProTip&trade;:** you can also run `rake exemplify:all` to copy all files at once, or use `rake -T` to see what example files you have prepared.
+**ProTips&trade;:** 
+- Run `rake exemplify:all` to copy all files at once, or use `rake -T` to see what example files you have prepared
+- You can include additional rake logic for specific example files (so it will run right before exemplify task) like so:
+```ruby
+file 'config/database.yml' do
+  # Something happens here
+end
+```
