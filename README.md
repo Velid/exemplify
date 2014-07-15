@@ -25,7 +25,7 @@ development:
 - Run `rake exemplify:all` to copy all files at once, or use `rake -T` to see what example files you have prepared
 - You can include additional rake logic for specific example files (so it will run right before exemplify task) like so:
 ```ruby
-file 'config/database.yml' do
+file 'config/database.yml.example' do
   # Something happens here
 end
 ```
