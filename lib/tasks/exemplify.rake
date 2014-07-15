@@ -9,7 +9,7 @@ namespace :exemplify do
   FileList['config/**/*.example'].each do |template|
     target = template.chomp('.example')
     
-    desc "Create configuration file #{target} from its .example template}"
+    desc "Create configuration file #{target} from its .example template"
     task target => template do 
 
       # Abort if target file already exists
